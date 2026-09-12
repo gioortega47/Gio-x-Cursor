@@ -1,0 +1,349 @@
+/* A written note underneath the introduction. The hierarchy comes from the
+   writing: headings, bold parent points, and ordinary supporting bullets. */
+.application-note {
+  width: min(100%, 780px);
+  margin: 54px auto 0;
+}
+.note-section + .note-section {
+  margin-top: 62px;
+  padding-top: 54px;
+  border-top: 1px solid var(--border);
+}
+.note-section > h2 {
+  font-size: 32px;
+  line-height: 1.3;
+  font-weight: 500;
+  letter-spacing: -1.1px;
+  margin-bottom: 25px;
+  text-wrap: pretty;
+}
+.note-section > p,
+.note-section ul {
+  font-size: 15px;
+  line-height: 1.85;
+  color: #54584e;
+}
+.note-section > p {
+  margin-bottom: 22px;
+}
+.note-section ul {
+  list-style: disc;
+  padding-left: 23px;
+  margin: 0;
+}
+.note-section > ul > li {
+  padding-left: 3px;
+  margin-top: 16px;
+}
+.note-section > ul > li:first-child {
+  margin-top: 0;
+}
+.note-section ul li::marker {
+  color: #7c8272;
+  font-size: 0.75em;
+}
+.note-section strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+.story-section > ul > li + li {
+  margin-top: 29px;
+}
+.note-section > ul + p {
+  margin-top: 28px;
+  margin-bottom: 0;
+  color: var(--muted);
+}
+.note-section ul ul {
+  list-style: circle;
+  margin-top: 9px;
+  padding-left: 22px;
+}
+.note-section ul ul > li {
+  margin-top: 7px;
+  padding-left: 2px;
+}
+.note-section a {
+  color: var(--foreground);
+  text-decoration: underline;
+  text-decoration-color: #a9ae9c;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 1px;
+}
+.note-section a:hover {
+  text-decoration-color: var(--foreground);
+}
+.copy-table-scroll {
+  max-width: 100%;
+  margin: 24px 0 32px;
+  overflow-x: auto;
+}
+.copy-table-scroll table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  color: #54584e;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.copy-table-scroll th,
+.copy-table-scroll td {
+  padding: 18px 14px;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--border);
+}
+.copy-table-scroll th {
+  padding-top: 0;
+  padding-bottom: 12px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.copy-table-scroll th:first-child,
+.copy-table-scroll td:first-child {
+  width: 7%;
+  padding-left: 0;
+  font-variant-numeric: tabular-nums;
+}
+.copy-table-scroll th:nth-child(2),
+.copy-table-scroll td:nth-child(2) {
+  width: 19%;
+}
+.copy-table-scroll th:last-child,
+.copy-table-scroll td:last-child {
+  padding-right: 0;
+}
+.note-section .copy-table-scroll a {
+  overflow-wrap: normal;
+}
+.application-note .contact-section {
+  margin-top: 64px;
+  padding: 48px 0 64px;
+  border-top: 1px solid var(--border);
+  border-bottom: 0;
+}
+.application-note .contact-section > h2 {
+  font-size: 26px;
+  line-height: 1.35;
+  letter-spacing: -0.8px;
+}
+.application-note .contact-section > p {
+  font-size: 15px;
+  margin-top: 15px;
+}
+.application-note .contact-controls {
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.application-note .contact-control {
+  min-height: 42px;
+  height: auto;
+  max-width: 100%;
+  padding: 11px 15px;
+  gap: 9px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  box-shadow: none;
+  color: var(--foreground);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  text-decoration: none;
+}
+.application-note .contact-phone {
+  border-color: var(--foreground);
+  background: var(--foreground);
+  color: var(--background);
+}
+.contact-email-address {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  white-space: normal;
+  user-select: text;
+}
+.contact-copy-label {
+  color: var(--muted);
+  font-size: 10px;
+}
+.contact-copy-feedback {
+  min-height: 18px;
+  margin-top: 9px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 18px;
+}
+.application-note .signoff {
+  display: block;
+  position: static;
+  margin-top: 31px;
+  font-size: 12px;
+}
+.application-note .signoff > span {
+  font-size: 34px;
+}
+@media (max-width: 760px) {
+  .application-note {
+    margin-top: 40px;
+  }
+  .note-section + .note-section {
+    margin-top: 44px;
+    padding-top: 38px;
+  }
+  .note-section > h2 {
+    font-size: 27px;
+    letter-spacing: -0.85px;
+    margin-bottom: 22px;
+  }
+  .note-section > p,
+  .note-section ul {
+    font-size: 14px;
+    line-height: 1.85;
+  }
+  .note-section ul,
+  .note-section ul ul {
+    padding-left: 18px;
+  }
+  .note-section ul > li,
+  .note-section ul ul > li {
+    padding-left: 1px;
+  }
+  .story-section > ul > li + li {
+    margin-top: 26px;
+  }
+  .application-note .contact-section {
+    margin-top: 44px;
+    padding-top: 38px;
+    padding-bottom: 39px;
+  }
+  .application-note .contact-section > h2 {
+    font-size: 24px;
+  }
+  .application-note .contact-section > p {
+    font-size: 14px;
+  }
+}
+
+/* Markdown adds paragraphs inside loosely spaced list items. */
+.note-section li > p {
+  margin: 0;
+}
+.note-section li > p + p {
+  margin-top: 8px;
+}
+.note-section a {
+  overflow-wrap: anywhere;
+}
+.note-section h3 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 30px 0 14px;
+}
+.note-section h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 24px 0 12px;
+}
+.note-section > ul + ul {
+  margin-top: 22px;
+}
+.copy-image-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 18px 0 28px;
+}
+.copy-image-gallery figure {
+  min-width: 0;
+  margin: 0;
+}
+.copy-image-gallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1.73;
+  object-fit: contain;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+.copy-image-gallery figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+}
+.copy-image-gallery figure:not(:has(figcaption)) {
+  align-self: center;
+}
+.copy-image-gallery figure:not(:has(figcaption)) img {
+  aspect-ratio: auto;
+}
+.image-carousel {
+  margin: 24px 0 28px;
+}
+.image-carousel-frame {
+  height: clamp(340px, 72svh, 640px);
+  overflow: hidden;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 7px;
+}
+.image-carousel-frame figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.image-carousel-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.image-carousel-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+.image-carousel-arrow {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.image-carousel figcaption {
+  padding: 10px 0;
+  color: var(--muted);
+  font-size: 14px;
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .copy-image-gallery {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+  }
+}
+.note-section blockquote {
+  margin: 22px 0;
+  border-left: 2px solid var(--border);
+  padding-left: 20px;
+  color: var(--muted);
+}
+.note-section ol {
+  list-style: decimal;
+  padding-left: 23px;
+  font-size: 15px;
+  line-height: 1.85;
+}
+.contact-section ul {
+  list-style: disc;
+  margin-top: 16px;
+  padding-left: 23px;
+  font-size: 15px;
+  line-height: 1.85;
+  color: var(--muted);
+}
