@@ -1,5 +1,4 @@
 import assert from "node:assert/strict";
-import { readFile } from "node:fs/promises";
 import { createElement } from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { createServer } from "vite";
@@ -10,15 +9,11 @@ const server = await createServer({
   appType: "custom",
 });
 try {
-  const { parseSiteCopy, normalizeSiteMarkdown } = await server.ssrLoadModule(
+  const { parseSiteCopy, normalizeSiteMarkdown, source: rawSource } = await server.ssrLoadModule(
     "/src/lib/site-copy.ts",
   );
   const { WrittenSection, HeroCopy, Copy } = await server.ssrLoadModule(
     "/src/components/copy.tsx",
-  );
-  const rawSource = await readFile(
-    new URL("../website-copy.md", import.meta.url),
-    "utf8",
   );
   const source = normalizeSiteMarkdown(rawSource);
 

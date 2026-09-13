@@ -1,6 +1,6 @@
 import { siteCopy } from "./lib/site-copy";
 
-// Edit website-copy.md for the site’s wording, links, and video settings.
+// Site wording, links, and video settings are embedded in src/lib/site-copy.ts.
 export const profile = siteCopy.profile;
 
 export const navigation = [

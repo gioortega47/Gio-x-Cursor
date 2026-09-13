@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Preserve the published utilities independently of project documentation. */
+@source inline("static grow italic sticky container rounded line-through");
+
 @theme inline {
   --font-sans: "Geist", Arial, sans-serif;
   --font-mono: "Geist Mono", monospace;
