@@ -1,8 +1,7 @@
 # Landing page — guidance for Codex
 
-Read [README.md](README.md) for the editing contract, troubleshooting, and work
-history. Read [CONTENT-NOTES.md](CONTENT-NOTES.md) when assessing evidence or
-adding claims; its historical copy descriptions are not the current draft.
+Read [CONTENT-NOTES.md](CONTENT-NOTES.md) when assessing evidence or adding
+claims; its historical copy descriptions are not the current draft.
 
 - Edit `website-copy.md` for page wording. It supplies hero, opportunity, fit,
   sourcing, contact, and profile/video settings. `src/lib/site-copy.ts` imports it
@@ -45,5 +44,3 @@ adding claims; its historical copy descriptions are not the current draft.
   copy or style edit, use checks proportionate to the change. Do not claim the
   page matches the editor after checking only the saved source or server startup.
 
-Record meaningful workflow or implementation changes in the README. Treat its
-verification dates as historical evidence, not a guarantee about later edits.
