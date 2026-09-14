@@ -3,6 +3,7 @@ import Markdown, { type Components } from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { siteCopy, type CopySection } from "../lib/site-copy";
 import { withBase } from "../lib/utils";
+import { imageDimensions } from "../lib/image-dimensions";
 import { ImageCarousel } from "./image-carousel";
 
 const remarkPlugins = [remarkGfm];
@@ -57,6 +58,7 @@ const components: Components = {
   img: ({ node: _node, src, ...props }) => (
     <img
       {...props}
+      {...(src ? imageDimensions[src] : undefined)}
       src={src ? withBase(src) : src}
       loading="lazy"
       decoding="async"

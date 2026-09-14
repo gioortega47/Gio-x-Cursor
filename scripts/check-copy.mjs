@@ -38,6 +38,18 @@ try {
       section: parseSiteCopy(source).sections.fit,
     }),
   );
+  for (const [image] of liveFitHtml.matchAll(/<img\b[^>]*>/g)) {
+    assert.match(
+      image,
+      /\bwidth="[1-9]\d*"/,
+      "Local screenshots need an intrinsic width before lazy loading.",
+    );
+    assert.match(
+      image,
+      /\bheight="[1-9]\d*"/,
+      "Local screenshots need an intrinsic height so section links do not shift.",
+    );
+  }
   assert.equal(
     (liveFitHtml.match(/aria-roledescription="carousel"/g) ?? []).length,
     1,

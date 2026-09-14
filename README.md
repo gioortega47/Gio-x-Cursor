@@ -20,6 +20,11 @@ open `http://127.0.0.1:5174/`. Saved edits update the running preview.
 The current recording is `public/video/amanda_video.mp4` (about 1:30). Its setting
 is `video: "/video/amanda_video.mp4"`; the landscape poster remains in place.
 
+Local image dimensions are recorded in `src/lib/image-dimensions.ts` so lazy
+images reserve their space before loading and section links land correctly.
+Update those dimensions when replacing or adding images. Captioned galleries
+keep their existing fixed aspect ratio; uncaptioned images use their own ratio.
+
 ## Validate and publish
 
 ```sh

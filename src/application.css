@@ -262,7 +262,7 @@
 .copy-image-gallery img {
   display: block;
   width: 100%;
-  aspect-ratio: 1.73;
+  height: auto;
   object-fit: contain;
   background: var(--card);
   border: 1px solid var(--border);
@@ -279,8 +279,8 @@
 .copy-image-gallery figure:not(:has(figcaption)) {
   align-self: center;
 }
-.copy-image-gallery figure:not(:has(figcaption)) img {
-  aspect-ratio: auto;
+.copy-image-gallery figure:has(figcaption) img {
+  aspect-ratio: 1.73;
 }
 .image-carousel {
   margin: 24px 0 28px;
