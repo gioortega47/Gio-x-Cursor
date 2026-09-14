@@ -32,9 +32,9 @@ node scripts/check-copy.mjs
 GITHUB_PAGES=true npm run build
 ```
 
-The publishing repository is `looseontheland/Gio-x-Cursor`. Its `main` branch
+The publishing repository is `gioortega47/Gio-x-Cursor`. Its `main` branch
 deploys through `.github/workflows/pages.yml` to
-https://looseontheland.github.io/Gio-x-Cursor/ when GitHub Pages is enabled for
+https://gioortega47.github.io/Gio-x-Cursor/ when GitHub Pages is enabled for
 Actions. The build prefixes local assets with `/Gio-x-Cursor/`.
 The separate `Gio-x-Cursor2` folder has no publishing remote; changes must first
 be copied into the publishing checkout. Never include dependencies, build output,
