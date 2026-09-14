@@ -5,7 +5,9 @@
 - Run the local development server with `npm run dev` (port 5173).
 - Site copy and settings are embedded in `src/lib/site-copy.ts`. Preserve its
   section markers and existing parsing behavior when making technical changes.
-- Validate with `node scripts/check-copy.mjs` and `npm run build`.
+- Validate with `node scripts/check-copy.mjs`, `node scripts/check-pages-copy.mjs`,
+  and `npm run build`. Keep setup-caption metadata keyed by Markdown source paths;
+  the Pages regression check verifies captions under the deployment base path.
 - For GitHub Pages, build with `GITHUB_PAGES=true npm run build`. Pushing `main`
   deploys the site at `/Gio-x-Cursor/`. `withBase` supplies the asset path prefix.
 - Keep the hosted site's wording, layout, assets, and behavior unchanged unless

@@ -25,10 +25,15 @@ images reserve their space before loading and section links land correctly.
 Update those dimensions when replacing or adding images. Captioned galleries
 keep their existing fixed aspect ratio; uncaptioned images use their own ratio.
 
+The setup labels come from `personalSetupCaption` and `workSetupCaption` in the
+embedded copy. Caption metadata uses the original Markdown image paths; only
+rendered asset URLs receive the GitHub Pages prefix.
+
 ## Validate and publish
 
 ```sh
 node scripts/check-copy.mjs
+node scripts/check-pages-copy.mjs
 GITHUB_PAGES=true npm run build
 ```
 
