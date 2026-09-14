@@ -1,5 +1,6 @@
 # Build and hosting
 
+- Read `README.md` for editing, preview ports, and publishing workflow.
 - Install dependencies with `npm ci`.
 - Run the local development server with `npm run dev` (port 5173).
 - Site copy and settings are embedded in `src/lib/site-copy.ts`. Preserve its

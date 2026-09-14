@@ -228,7 +228,7 @@ export function SiteNavigation({ brand }: { brand: ReactNode }) {
         }}
       >
         <DialogHeader className="contents-heading">
-          <span className="eyebrow">GIO → ADAM</span>
+          <span className="eyebrow">GIO → AMANDA</span>
           <DialogTitle>On this page</DialogTitle>
           <DialogDescription>
             Start at the beginning, or jump to what interests you.

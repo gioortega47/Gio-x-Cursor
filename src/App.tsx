@@ -99,9 +99,6 @@ function VideoIntroduction() {
               height="941"
               fetchPriority="high"
             />
-            <span className="video-topline">
-              <span>GIO → ADAM</span>
-            </span>
             <span className="video-center">
               <span className="play-button">
                 <Play size={22} fill="currentColor" strokeWidth={1.5} />
@@ -128,7 +125,7 @@ function VideoIntroduction() {
             </DialogTitle>
             <DialogDescription>
               {hasVideo && !failed
-                ? "A personal introduction for Adam."
+                ? "A personal introduction from Gio."
                 : "I’m recording a short introduction for this spot. In the meantime, here’s the thought behind this page."}
             </DialogDescription>
           </DialogHeader>
@@ -408,16 +405,13 @@ export default function App() {
       <SiteNavigation brand={<Wordmark />} />
       <main id="main" tabIndex={-1} className="page-width">
         <section className="hero" aria-labelledby="hero-title">
-          <div className="eyebrow hero-eyebrow">
-            <span className="small-status-dot" /> A PERSONAL NOTE, JUST FOR YOU
-          </div>
           <HeroCopy />
           <a href="#hello" className="hero-link">
             A little introduction <ArrowDown size={13} />
           </a>
         </section>
         <VideoIntroduction />
-        <article className="application-note" aria-label="My note to Adam">
+        <article className="application-note" aria-label="My note to Amanda">
           <ApplicationSections />
           <Contact />
         </article>
