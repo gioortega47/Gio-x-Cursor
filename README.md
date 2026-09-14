@@ -8,6 +8,10 @@ The page wording, links, and media settings are embedded in the `source` string
 in `src/lib/site-copy.ts`. Preserve the five section markers and quoted settings.
 Read the current file before editing; keep any unsaved user draft intact.
 
+The “Created with Cursor” credit in `src/App.tsx` is styled by `.cursor-credit`
+in `src/styles.css`. It occupies the hero's existing top padding so the headline
+and the rest of the page retain their original positions.
+
 ```sh
 npm ci
 npm run dev

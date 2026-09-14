@@ -8,6 +8,7 @@ import {
   ChevronRight,
   Copy as CopyIcon,
   Mail,
+  MousePointer2,
   Phone,
   Play,
   Search,
@@ -405,6 +406,10 @@ export default function App() {
       <SiteNavigation brand={<Wordmark />} />
       <main id="main" tabIndex={-1} className="page-width">
         <section className="hero" aria-labelledby="hero-title">
+          <div className="cursor-credit">
+            <MousePointer2 size={12} aria-hidden="true" />
+            <span>Created with <strong>Cursor</strong></span>
+          </div>
           <HeroCopy />
           <a href="#hello" className="hero-link">
             A little introduction <ArrowDown size={13} />

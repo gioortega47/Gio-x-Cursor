@@ -225,8 +225,31 @@ p {
   display: none;
 }
 .hero {
+  position: relative;
   text-align: center;
   padding: clamp(28px, 5svh, 50px) 0 24px;
+}
+/* Keep the credit in the existing gap without shifting any page content. */
+.cursor-credit {
+  position: absolute;
+  top: clamp(8px, 1.5svh, 15px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 5px 11px;
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  background: var(--card);
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 16px;
+  white-space: nowrap;
+}
+.cursor-credit strong {
+  color: var(--foreground);
+  font-weight: 500;
 }
 .hero-eyebrow {
   display: flex;
